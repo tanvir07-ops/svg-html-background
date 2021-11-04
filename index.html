@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css shape</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .custom-shape-divider-bottom-1636014520 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+      }
+
+      .custom-shape-divider-bottom-1636014520 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+      }
+
+      .custom-shape-divider-bottom-1636014520 .shape-fill {
+        fill: #ffffff;
+      }
+
+      .custom-shape-divider-top-1636014154 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+      }
+
+      .custom-shape-divider-top-1636014154 .shape-fill {
+        fill: #ffffff;
+      }
+
+      body {
+        position: relative;
+      }
+
+      /* img {
+        position: absolute;
+        top: 50px;
+        right: 0;
+      } */
+      .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+      }
+      .heading-para {
+        justify-self: end;
+      }
+      .heading-para h1 {
+        color: #222;
+        text-shadow: 0px 0px 10px gray;
+        font-weight: 1000;
+        font-size: 3rem;
+        text-transform: uppercase;
+      }
+      .heading-para p {
+        color: #555;
+        font-weight: 600;
+        margin-top: 1rem;
+        font-size: 18px;
+        letter-spacing: -0.2px;
+      }
+
+      nav {
+        background-color: #087f5b;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-img {
+        height: 100px;
+      }
+      .nav-list {
+        display: flex;
+        list-style-type: none;
+        gap: 24px;
+      }
+      .nav-list a:last-child {
+        margin-right: 48px;
+      }
+      .nav-list a {
+        text-decoration: none;
+        color: white;
+      }
+      .activate {
+        background-color: #e03131;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img src="logo.png" alt="" class="nav-img" />
+      </div>
+      <div>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#" class="activate">Who</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero" style="position: relative; background-color: #087f5b">
+      <div class="heading-para">
+        <h1>Tanvir Rifat</h1>
+        <p>
+          He is a beast & his moto never give up! and alltime show his enemy
+          middle finger!
+        </p>
+      </div>
+      <div class="heading-img">
+        <img src="rifat.png" alt="" />
+      </div>
+
+      <div class="custom-shape-divider-bottom-1636014520">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </header>
+  </body>
+</html>
